@@ -110,7 +110,6 @@
 
 // Pop title
 #my-pop-title{
-    width: auto;
     padding: 79px 0;
     overflow: hidden;
     text-align: left;
@@ -118,15 +117,16 @@
     border-bottom: 10px solid darken(#F8F8F8,4%);
 }
 #pop-title {
-    max-width: 80%;
-    margin: auto;
+    max-width: 540px;
+    margin-right: 80px;
+    float: right;
     text-align: left;
     padding: 0!important; 
-    font-size:	60px;
-    font-weight:	700;
+    font-size:	80px;
+    font-weight:	300;
     color:	#323232;
     letter-spacing:	-3px;
-    line-height:	1.45;
+    line-height:	92px;
     #populr > .text-color-over-color(@background-color);
     position: relative;
     text-shadow: 2px 3px 1px rgba(0,0,0,.3);
@@ -356,7 +356,7 @@ h2, h3, h4, h5 { text-shadow: 0 1px 1px rgba(0,0,0,0.4); }
             font-size: 36px;
             font-weight: 300;
             line-height:1.45;
-            text-align: center;
+//            text-align: center;
             color:#4c4c4c;
         }
         .description, .body, .description li, .body li,  {
@@ -526,6 +526,83 @@ h2, h3, h4, h5 { text-shadow: 0 1px 1px rgba(0,0,0,0.4); }
 // IE Styles
 .lt-ie8 {
     button { padding: 8px 5px !important; }
+}
+//added style fixes
+#pop {
+  color: #8C8779 !important;
+}
+.asset-type-imagegroup .asset-size-4 {
+  .description {
+    color: #716D61 !important;
+  }
+}
+#top-region {
+  .pplr-icon {
+    background: none !important;
+    color: #FD8277 !important;
+  }
+}
+#main-content {
+  background :#E5E1D6 url('../images/body-pattern.png') repeat ;
+}
+#pop-title {
+  div.font-size-smaller{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    font-family: @body-font-family;
+  }
+}
+#background {
+  margin-top: -90px;
+  z-index: -4;
+}
+.asset-type-text {
+  .asset-size-2 {
+    .body , .description {
+    margin-left: 50px;
+    }
+  }
+}
+//footer styles branding
+footer {
+  height: 99px;
+  background: rgba(252, 251, 247, 0.8);
+  box-shadow: 0 -2px 3px rgba(51, 51, 51, 0.3);
+  .content {
+    width: 960px;
+    padding: 0 16px;
+    margin: 0 auto;
+  .logo{
+    img {
+      border: 0 none;
+      float: left;
+      margin-top: 20px;
+    }
+  }
+
+    .copyright {
+      display: inline;
+      float: right;
+      font-size: 12px;
+      line-height: 22px;
+      margin-bottom: 18px;
+      margin-right: 0;
+      margin-top: 18px;
+      text-align: right;
+      width: 57.6446%;
+      a {
+        color: #716D61 !important;
+        &:hover {
+          color: #716D61 !important;
+          text-decoration: underline !important;
+          transition:none ;
+        }
+
+
+      }
+    }
+}
 }
 
 
