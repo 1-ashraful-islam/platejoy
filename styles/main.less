@@ -12,6 +12,8 @@
 @import 'variables';
 @import 'http://populr.me/assets/developers/populr_mixins.less';
 @import 'preboot';
+@import '//fonts.googleapis.com/css?family=Oxygen:400,700,300';
+@import '//fonts.googleapis.com/css?family=Economica';
 
 
 // Call preboot.less's reset to reduce browser inconsistencies
@@ -32,13 +34,13 @@
   line-height: 1.2;
 }
 .pop-title-text() {
-  font-family: @headline-font-family;
+  font-family: 'Economica', sans-serif;
   font-size: 56px;
   line-height: 1.1;
 }
 
 // Body text defaults
-@body-font-family: 'Open Sans', Arial, sans-serif;
+@body-font-family: 'Oxygen', sans-serif;
 
 .body-text() {
   font-family: @body-font-family;
@@ -90,9 +92,9 @@
 //cool header
 
 #cool-header{
-    border-top:3px solid #232323;
     position: relative;
-    background-color: white;
+  background: rgba(252, 251, 247, 0.8);
+  box-shadow: 0 2px 3px rgba(51, 51, 51, 0.3);
     width:100%;
     overflow: hidden;
     padding: 13px 0;
@@ -349,7 +351,7 @@ h2, h3, h4, h5 { text-shadow: 0 1px 1px rgba(0,0,0,0.4); }
             padding-bottom: 15px;
 }
     .columnizer-cols1, .columnizer-cols2{
-        background-color: #f3f3f3;
+//        background-color: #f3f3f3;
         .asset-title {
             font-size: 36px;
             font-weight: 300;
@@ -369,6 +371,7 @@ h2, h3, h4, h5 { text-shadow: 0 1px 1px rgba(0,0,0,0.4); }
               font-size: 28px;
             }
             background-color: #ffffff;
+            background :#E5E1D6 url('../images/body-pattern.png') repeat ;
             .description, .body, .description li, .body li,  {
                 font-size: 14px;
             }
@@ -410,16 +413,20 @@ h2, h3, h4, h5 { text-shadow: 0 1px 1px rgba(0,0,0,0.4); }
 }
 
 #bottom-region{
-         border-top: 5px solid #323232;
-         a {
-            &:hover{color:darken(@link-color, 20%);}
-         }
-         .link-btn:hover{
-            background-color: darken(@link-color, 20%)!important;
-            i.icon{color:#8c8c8c!important;}
-         }
-         .columnizer-row{
-            background: #323232 url('@{base-url}/images/page_glow.png') no-repeat top center;
+  background :#E5E1D6 url('../images/body-pattern.png') repeat ;
+  box-shadow: 0 -2px 3px rgba(51, 51, 51, 0.3);
+  color:#716D61;
+  a {
+    color:#716D61;
+    &:hover{text-decoration:underline;}
+  }
+  .link-btn:hover{
+    background-color: darken(@link-color, 20%)!important;
+    i.icon{color:#8c8c8c!important;}
+  }
+  .columnizer-row{
+    background:rgba(252, 251, 247, 0.8);
+    //            background: #323232 url('@{base-url}/images/page_glow.png') no-repeat top center;
             padding-bottom:30px;
             .asset-title {
                 color:#FFFFFF;
