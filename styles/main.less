@@ -45,7 +45,7 @@
 .body-text() {
   font-family: @body-font-family;
   font-size: 14px;
-  line-height: 1.5;
+
   font-weight:400;
   line-height:24px;
 }
@@ -92,6 +92,7 @@
 //cool header
 
 #cool-header{
+  z-index: 10;
     position: relative;
   background: rgba(252, 251, 247, 0.8);
   box-shadow: 0 2px 3px rgba(51, 51, 51, 0.3);
@@ -110,11 +111,10 @@
 
 // Pop title
 #my-pop-title{
-    padding: 79px 0;
+    padding: 110px 0 50px;
     overflow: hidden;
     text-align: left;
-    border-top: 10px solid darken(#F8F8F8,4%);
-    border-bottom: 10px solid darken(#F8F8F8,4%);
+
 }
 #pop-title {
     max-width: 540px;
@@ -531,34 +531,40 @@ h2, h3, h4, h5 { text-shadow: 0 1px 1px rgba(0,0,0,0.4); }
 #pop {
   color: #8C8779 !important;
 }
-.asset-type-imagegroup .asset-size-4 {
+.asset-type-imagegroup
+{
+  &.asset-size-4 {
   .description {
     color: #716D61 !important;
   }
+}
 }
 #top-region {
   .pplr-icon {
     background: none !important;
     color: #FD8277 !important;
   }
+  
 }
 #main-content {
   background :#E5E1D6 url('../images/body-pattern.png') repeat ;
 }
 #pop-title {
+
   div.font-size-smaller{
     font-size: 18px;
     line-height: 28px;
     font-weight: 300;
     font-family: @body-font-family;
+    letter-spacing: normal;
   }
 }
 #background {
   margin-top: -90px;
-  z-index: -4;
+
 }
 .asset-type-text {
-  .asset-size-2 {
+  &.asset-size-2 {
     .body , .description {
     margin-left: 50px;
     }
