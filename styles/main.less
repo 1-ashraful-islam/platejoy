@@ -34,7 +34,7 @@
   line-height: 1.2;
 }
 .pop-title-text() {
-  font-family: 'Economica' !important;
+  font-family: 'Economica' ,sans-serif;
   font-size: 56px;
   line-height: 1.1;
 }
@@ -117,6 +117,7 @@
 
 }
 #pop-title {
+    font-family: 'Economica',sans-serif !important;
     max-width: 540px;
     margin-right: 80px;
     float: right;
@@ -653,6 +654,11 @@ h2, h3, h4, h5 { text-shadow: 0 1px 1px rgba(0,0,0,0.4); }
 
 @media screen and (max-width: 900px) {
   #populr > .mobile-reset();
+
+//  fixes for footer
+  .footer #pop img:not(.populr-mobile-noresize):not(#background-image) {
+    width: auto !important;
+  }
   .columnizer-col { margin-left: 0 !important; margin-right: 0 !important; }
   .embed { height: auto !important; }
   .columnizer-row-inner {
